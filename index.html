@@ -62,6 +62,7 @@
         grados.innerHTML = "";
         let data = snapshot.val();
         grados.innerText += `${data} C°`;
+        grados.style.color = data <= 10 ? "blue" : data <= 30 ? "green" : "red" 
     });
 
 
